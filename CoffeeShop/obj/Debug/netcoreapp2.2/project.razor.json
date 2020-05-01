@@ -2966,6 +2966,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Cart.cshtml",
+      "TargetPath": "Views\\Home\\Cart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/AddCategory.cshtml",
+      "TargetPath": "Views\\Home\\AddCategory.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -2976,8 +2986,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Edit.cshtml",
+      "TargetPath": "Views\\Home\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/AddProduct.cshtml",
+      "TargetPath": "Views\\Home\\AddProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/UserHeader.cshtml",
+      "TargetPath": "Views\\Home\\UserHeader.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2986,8 +3016,28 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/AdminHeader.cshtml",
+      "TargetPath": "Views\\Home\\AdminHeader.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Registration.cshtml",
+      "TargetPath": "Views\\Home\\Registration.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Menu.cshtml",
+      "TargetPath": "Views\\Home\\Menu.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -2998,6 +3048,16 @@
     {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/Success.cshtml",
+      "TargetPath": "Views\\Home\\Success.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/LandingPage.cshtml",
+      "TargetPath": "Views\\Home\\LandingPage.cshtml",
       "FileKind": "mvc"
     }
   ],

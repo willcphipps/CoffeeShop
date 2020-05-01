@@ -1,0 +1,138 @@
+ <partial name="UserHeader" />
+
+<div class="flex-row">
+  <div id="top" class="wrapp">
+    <div class="hero-image">
+        <div class="hero-text">
+          <a href="/Menu"><button class="orderbuttn"> <h3>ORDER NOW</h3></button></a>
+        </div>
+      </div>
+  </div>
+<br id="about">
+<br>
+  <div class="m-5 text-center">
+    <h3><i>
+      A little bit about This Coffee Shop
+    </i></h3>
+    <div class="mt-5 mr-5 ml-5">
+      <p class="mr-5 ml-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quisquam blanditiis ut, quae enim quo, architecto laudantium ipsa officiis, dolorem nulla ipsam cumque illo aut impedit exercitationem repellat. Provident delectus animi atque earum aliquid odio, voluptatem cupiditate dolore sit iste ea laboriosam debitis odit explicabo neque voluptatum. Voluptatem, eaque repellat?</p>
+    </div>
+    <div class="m-4">
+      <p>Press</p>
+      <p><a class="text-secondary" href="https://thislandpress.com/2010/04/20/melinda-and-marcia-borum/">“True Tulsa: Melinda & Marcia Borum”</a> / This Land Press<p>
+      <p><a class="text-secondary" href="https://www.tulsaworld.com/scene/article.aspx?subjectID=39&articleID=20100916_458_WK20_CUTLIN395058">“Local Treats Add to Shades of Brown’s Existing Charm”</a> / Tulsa<p>
+      <p>World</p>
+      <p><a class="text-secondary" href="http://urbantulsa.com/gyrobase/Content?oid=oid%3A31960">“The Color’s On the Wall”</a> / Urban Tulsa Weekly</p>
+      <p><a class="text-secondary" href="https://tulsafood.com/brookside/shades-of-brown-tulsa">“A Unique Coffee Experience on Brookside”</a> / TulsaFood.com</p>
+      <p>Foodie Praise</p>
+      <p><a class="text-secondary" href="https://www.yelp.com/biz/shades-of-brown-coffee-and-art-tulsa">People Love Us on Yelp!</a></p>
+      <p><a class="text-secondary" href="https://www.zomato.com/tulsa-ok/shades-of-brown-coffee-art-tulsa">Urban Spoon’ers are Happy, Too</a></p>
+  </div>
+<br>
+<hr class="my-2">
+<br>
+<br>
+    <h3><i>Contact & Hours<i></h3>
+  <div id="contact" class="d-flex flex-row justify-content-center">
+    <div class="m-3 p-5 flex-column"> 
+      <h4>Call</h4>
+      <p>918-747-3000</p>
+    </div>
+    <div class="m-3 p-5  flex-column"> 
+      <h4>Coffee shop Hours</h4>
+      <p><b>Sun: 8AM - 11PM </b></p>
+      <p><b>Mon- Thurs:  6AM - 11PM</b></p>
+      <p><b>Fri: 6AM - 12AM</b></p>
+      <p><b>Sat: 7AM - 12AM</b></p>
+    </div>
+    <div class="m-3 p-5  flex-column"> 
+      <h4>Location</h4>
+      <p>3302 S. Peoria Ave</p>
+      <p>Tulsa, OK 74105</p>
+    </div>
+  </div>
+  <div>
+    <iframe width="800" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc8Xi3KzstocRedWCRgHNctI&key=AIzaSyARgLScLbaeEjPWOZJjE1ubt2QIh5MKnGo" allowfullscreen></iframe>
+  </div>
+  <br>
+    <hr class="my-2">
+  <br>
+  <p>Find us on social</p>
+  <div class="d-flex flex-row justify-content-center">
+  <a class = "mr-5 ml-5" href="https://www.facebook.com/Shades-of-Brown-133998289971491/"><img src="~/images/Inst.png" alt="" height="50px"></a>
+  <a class = "mr-5 ml-5" href="https://www.instagram.com/shadescoffee/?hl=en"><img src="~/images/Fb.png" alt="" height="50px"></a>
+  
+  </div>
+
+
+
+
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.orderbuttn{
+    padding: 200%;
+} 
+.wrapp{
+    margin-top: 8%;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/covershades.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center; 
+    
+}
+body {
+    height: 100%;
+    background-color: rgb(255,255,255,);
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+    border: none;
+    margin-top: 10%;
+    outline: 0;
+    display: inline-block;
+    padding: 85px 125px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.hero-text button:hover {
+    background-color: #132;
+    color: white;
+}
+</style>
+
+
+
+@section Scripts{
+ 
+<script>
+    $("document").ready(function(){
+            $('#cart').hover(function() {
+            var temp = $(this).attr('alt');     
+            $(this).attr('alt', $(this).attr('src'));
+            $(this).attr('src', temp);
+        });
+    });
+</script>
+
+}

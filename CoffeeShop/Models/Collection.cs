@@ -6,6 +6,7 @@ namespace CoffeeShop.Models {
         [Key]
         public int CollectionId { get; set; }
         public int ProductId { get; set; }
+        public int CategoryId { get; set; }
         public Product NavProd { get; set; }
         public Category NavCat { get; set; }
     }

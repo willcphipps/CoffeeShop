@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar fixed-top navbar-light">
+  <a class="navbar-brand" href="/LandingPage">HOME</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/LandingPage/#about">ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/LandingPage/#contact">CONTACT</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/Menu">MENU<a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="/Logout">LOGOUT<a>
+      </li>
+    </ul>
+    @ViewBag.Cart.Count<a class="nav-link" href="/Cart"><img id="cart" src="../images/bag.png" alt="../images/white_bag.png" height="25"></a>
+  </div>
+</nav>
+<style>
+.navbar{
+     background-color: rgb(0,0,0, .1);
+}
+</style>
+
+
+@section Scripts{
+ 
+<script>
+    $("document").ready(function(){
+            $('#cart').hover(function() {
+            var temp = $(this).attr('alt');     
+            $(this).attr('alt', $(this).attr('src'));
+            $(this).attr('src', temp);
+        });
+    });
+</script>
+
+}

@@ -7,6 +7,7 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -44,6 +45,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  background-image: url(~/images/4fa51644-f771-45b5-aa51-e81970065038_lake-water.jpg);
 }
 .footer {
   position: absolute;

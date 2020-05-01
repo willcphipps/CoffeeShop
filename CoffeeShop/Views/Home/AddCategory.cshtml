@@ -1,0 +1,24 @@
+@model Category
+
+<div class="mt-4 container">
+    <div class="jumbotron">
+        <h1>Coffee Shop Admin Panel</h1>
+        <div class="mt-4 d-flex justify-content-between">
+            <a href="/Dashboard" class="btn btn-outline-info">Dashboard</a>
+            <a href="/AddProduct" class="btn btn-outline-primary">Add Product</a>
+            <a href="/Logout" class="btn btn-outline-danger btn-md">logout</a>
+        </div> 
+    </div>
+
+    <div class="mt-5">
+    <form asp-action="CreateCategory" method="post" class="">
+        <div class="form-group col-4 ">
+            <span asp-validation-for="CategoryName"></span>
+            <label asp-for="CategoryName"></label>
+            <input asp-for="CategoryName" class="form-control">
+        </div>
+        <div class="form-group col-4">
+            <input class="btn btn-success" type="submit">
+        </div>
+    </form>
+    </div>

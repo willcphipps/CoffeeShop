@@ -1,0 +1,57 @@
+@model List<Product>
+
+<div class="mt-4 container">
+    <div class="jumbotron">
+        <h1>Coffee Shop Admin Panel</h1>
+        <div class="mt-4 d-flex justify-content-between">
+            <a href="/AddProduct" class="btn btn-outline-info">Add Product</a>
+            <a href="/AddCategory" class="btn btn-outline-primary">Add Category</a>
+            <a href="/Logout" class="btn btn-outline-danger btn-md">logout</a>
+        </div> 
+
+    </div>
+    <div class="m-4 text-center"><h4>Menu Items</h4></div>
+        <div class="col-lg-12 text-right">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th> Product Name</th>
+                        <th> Description</th>
+                        <th> UnitPrice</th>
+                        <th> Product Image</th>
+                        <th> Category</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var item in Model)
+                {
+                    var ImagePath="~/images/" + (item.ImagePath ?? "skitterphoto.jpg");
+                    <tr>
+                        <td>@item.ProductName</td>
+                        <td>@item.Description</td>
+                        <td minlenth="2">$@item.UnitPrice.ToString("n2")</td>
+                        <td><img src="~/images/@item.ImagePath" alt="Coffee-Image" width="50px"/></td>
+                        
+                        <td>
+                        
+                        
+                        @foreach(var C in item.inCategory){
+                            
+                            @C.NavCat.CategoryName
+                           
+                        }
+                        
+                        </td>
+                        <td>
+                            <a href="/Delete/@item.ProductId" class="btn btn-sm btn-outline-danger">Delete</a>
+                            <a href="/Details/@item.ProductId" class="btn btn-sm btn-outline-info">Details</a>
+                            <a href="/Edit/@item.ProductId" class="btn btn-sm btn-outline-warning">Edit</a>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

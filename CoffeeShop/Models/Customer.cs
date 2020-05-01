@@ -8,6 +8,7 @@ namespace CoffeeShop.Models {
 
         [Key]
         public int UserId { get; set; }
+        public string UserType { get; set; }
 
         [Required]
         [MinLength (2, ErrorMessage = "First name must be longer than 2!")]
@@ -29,7 +30,7 @@ namespace CoffeeShop.Models {
         [MinLength (8, ErrorMessage = "Password must be 8 characters or longer!")]
         [Display (Name = "Password : ")]
         public string Password { get; set; }
-        
+
         [NotMapped]
         [Compare ("Password")]
         [DataType (DataType.Password)]

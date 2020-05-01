@@ -6,11 +6,11 @@ namespace CoffeeShop.Models {
     public class Order {
         [Key]
         public int OrderId { get; set; }
-        public int TotalPrice { get; set; }
-        public int CustomerId { get; set; }
+        public decimal TotalPrice { get; set; }
+        public int UserId { get; set; }
+        public bool HasPaid { get; set; } = false;
         public Customer OrderFor { get; set; }
-        public DateTime OrderDate { get; set; }
-        public List<Checkout> Cart { get;set; }
-
+        public DateTime OrderDate { get; set; } = DateTime.Now;
+        public List<OrderItem> prodInOrder { get; set; }
     }
 }

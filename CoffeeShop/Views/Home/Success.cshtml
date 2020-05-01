@@ -1,0 +1,14 @@
+@using System
+<div class="m-3 jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">SUCCESS!</h1>
+        <p class="lead">Your Coffee Awaits...</p>
+        <hr class="my-2">
+        <p>We have charged $@ViewBag.Charge.ToString("n2") to your card</p>
+        <p>Your order should be ready at @DateTime.Now.AddMinutes(30).ToShortTimeString()</p>
+        <p class="lead">
+            <a class="btn btn-outline-dark btn-md" href="/LandingPage" role="button">RETURN HOME</a>
+        </p>
+    </div>
+</div>
+

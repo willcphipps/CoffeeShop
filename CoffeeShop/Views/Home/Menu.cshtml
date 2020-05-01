@@ -1,0 +1,133 @@
+@model List<Product>
+ <partial name="UserHeader" />
+
+<style>
+
+body{
+    background-color: rgb(255,255,255);
+}
+.wrapp {
+    position: relative;
+}
+
+.link {
+    position: absolute;
+    padding: 10px;
+    margin-top: 25%;
+    margin-left: ;
+    width: 100%;
+    height:50px;
+    background-color: rgba(45, 43, 43, 0.25);
+}
+.link p{
+    text-decoration: none;
+    color: white;
+}
+
+.img_desc {
+    padding-top: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility .2s;
+}
+
+.wrapp:hover .img_desc {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapp:hover .img_img {
+    opacity: .5;
+}
+
+</style>
+
+
+<div class="mt-5 container">
+    <div class="mt-5 pt-5 m-3 d-flex justify-content-between">
+        @foreach(var cat in ViewBag.Categories){
+                <h4 class="btn btn-outline-dark" id="@cat.CategoryName">@cat.CategoryName</h4>
+                }
+    </div>
+
+    <div class="mt-5 container">
+        <div class="col-lg-12 col-md-12">
+            <div class="row d-flex justify-content-between">
+                @foreach(var item in Model){
+                <div class="m-3 wrapp">
+                    @foreach(var C in item.inCategory){
+                    <img class="@C.NavCat.CategoryName img_img" id="images" src="~/images/@item.ImagePath" alt="" Height="200px"/>
+                    }
+                    <div class="img_desc">
+                        <a href="/AddCart/@item.ProductId">
+                            <div class="link text-center"><p><b>@item.ProductName</b></p></div>
+                        </a>
+                    </div>
+                </div>
+            }
+        </div> 
+    </div>
+</div>
+
+
+@section Scripts{
+ 
+<script>
+    $("document").ready(function(){
+            $('#cart').hover(function() {
+            var temp = $(this).attr('alt');     
+            $(this).attr('alt', $(this).attr('src'));
+            $(this).attr('src', temp);
+        });
+
+        $('#Coffee').click(function(){
+            $('.Iced Coffee ').hide();
+            $('.Tea').hide();
+            $('.Food').hide();
+            $('.Stuff').hide();
+            $('.Coffee').show();
+        });
+        $('#Food').click(function(){
+            $('.Iced Coffee ').hide();
+            $('.Tea').hide();
+            $('.Coffee').hide();
+            $('.Stuff').hide();
+            $('.Food').show();
+        });
+        $('#Tea').click(function(){
+            $('.Iced Coffee	').hide();
+            $('.Food').hide();
+            $('.Coffee').hide();
+            $('.Stuff').hide();
+            $('.Tea').show();
+        });
+        $('#Iced Coffee').click(function(){
+            $('.Tea').hide();
+            $('.Food').hide();
+            $('.Coffee').hide();
+            $('.Stuff').hide();
+            $('.Iced Coffee').show();
+        });
+        $('#Stuff').click(function(){
+            $('.Tea').hide();
+            $('.Food').hide();
+            $('.Coffee').hide();
+            $('.Iced Coffee ').hide();
+            $('.Stuff').show();
+        });
+
+    });
+</script>
+
+}
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+        asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+        asp-fallback-test="window.jQuery"
+        crossorigin="anonymous"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+</script>
