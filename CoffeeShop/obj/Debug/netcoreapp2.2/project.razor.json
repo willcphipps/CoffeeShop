@@ -3046,6 +3046,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/Home/ProductDetails.cshtml",
+      "TargetPath": "Views\\Home\\ProductDetails.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/williamphipps/Desktop/CodingDojo/CSharp/PortfolioProject/CoffeeShop/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

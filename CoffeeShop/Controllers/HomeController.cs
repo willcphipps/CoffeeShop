@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+// using Stripe;
 
 namespace CoffeeShop.Controllers {
     public class HomeController : Controller
@@ -69,8 +70,9 @@ namespace CoffeeShop.Controllers {
                 return View("Index");
             }
         }
+        
         [HttpPost("Register")]
-        public IActionResult Register(Customer customer)
+        public IActionResult Register(Models.Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -333,6 +335,11 @@ namespace CoffeeShop.Controllers {
             _context.Products.Remove (toDestroy);
             _context.SaveChanges ();
             return Redirect ("/Dashboard");
+        }
+        [HttpGet("Details/{productid}")]
+        public IActionResult ProductDetails(int prodid){
+            ViewBag.Product = _context.Products.FirstOrDefault(p => p.ProductId == prodid);
+            return View();
         }
 
         [HttpGet ("Logout")]
